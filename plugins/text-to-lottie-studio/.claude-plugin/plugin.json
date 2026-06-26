@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "text-to-lottie-studio",
+  "displayName": "Text to Lottie Studio",
+  "description": "Turn text prompts into production-grade, art-directed Lottie animations rendered in a local Skia/Skottie player. Ships an expert motion-design skill with a reference library (motion craft, Skottie technique toolbox, procedural-generation cookbook).",
+  "author": {
+    "name": "Mily Labs",
+    "url": "https://github.com/Mily-Labs"
+  },
+  "homepage": "https://github.com/Mily-Labs/agent-skills/tree/main/plugins/text-to-lottie-studio",
+  "repository": "https://github.com/Mily-Labs/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "lottie",
+    "animation",
+    "motion-design",
+    "skottie",
+    "bodymovin",
+    "logo-animation",
+    "svg"
+  ]
+}

@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in a skill or plugin isn't working as expected.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Which agent?
+      options:
+        - Codex
+        - Claude Code
+        - Other (npx skills / manual)
+    validations:
+      required: true
+  - type: input
+    id: skill
+    attributes:
+      label: Skill / plugin
+      placeholder: text-to-lottie-studio
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Installed via ...
+        2. Asked the agent to ...
+        3. ...
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, agent version, Node version

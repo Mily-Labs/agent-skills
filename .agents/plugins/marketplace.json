@@ -1,0 +1,20 @@
+{
+  "name": "mily-labs",
+  "interface": {
+    "displayName": "Mily Labs"
+  },
+  "plugins": [
+    {
+      "name": "text-to-lottie-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/text-to-lottie-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

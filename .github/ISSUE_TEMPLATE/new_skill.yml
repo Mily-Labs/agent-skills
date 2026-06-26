@@ -1,0 +1,35 @@
+name: Propose a skill
+description: Suggest a new skill or plugin for the marketplace.
+labels: ["enhancement", "new-skill"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      placeholder: text-to-svg-icon
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should it do?
+      description: What task does this skill help an agent perform, and when should it trigger?
+    validations:
+      required: true
+  - type: dropdown
+    id: agents
+    attributes:
+      label: Target agents
+      multiple: true
+      options:
+        - Codex
+        - Claude Code
+        - Portable (npx skills)
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to contribute this myself (see CONTRIBUTING.md)

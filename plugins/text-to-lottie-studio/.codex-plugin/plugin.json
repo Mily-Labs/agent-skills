@@ -1,0 +1,40 @@
+{
+  "name": "text-to-lottie-studio",
+  "version": "0.1.0",
+  "description": "Turn text prompts into production-grade, art-directed Lottie animations rendered in a local Skia/Skottie player.",
+  "author": {
+    "name": "Mily Labs",
+    "url": "https://github.com/Mily-Labs"
+  },
+  "homepage": "https://github.com/Mily-Labs/agent-skills/tree/main/plugins/text-to-lottie-studio",
+  "repository": "https://github.com/Mily-Labs/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "lottie",
+    "animation",
+    "motion-design",
+    "skottie",
+    "bodymovin",
+    "logo-animation",
+    "svg"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Text to Lottie Studio",
+    "shortDescription": "Author virtuoso Lottie animations from a prompt.",
+    "longDescription": "An expert motion-design skill plus a local Skia/Skottie player. The agent reads the context of your brief, picks a bold direction, and authors art-directed Lottie JSON — self-drawing lines, kinetic typography, liquid morphs, particle bursts, seamless loops — then verifies it renders. Includes a reference library on motion craft, a Skottie-accurate technique toolbox, and a procedural-generation cookbook. Great for animating logos and filling a website with motion.",
+    "developerName": "Mily Labs",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Mily-Labs/agent-skills",
+    "brandColor": "#5B8CFF",
+    "defaultPrompt": [
+      "Animate my logo from logo.svg as a Lottie line-draw reveal.",
+      "Create 3 Lottie animations to fill my landing page.",
+      "Make a seamless Lottie loading loop, 60fps, dark theme."
+    ]
+  }
+}

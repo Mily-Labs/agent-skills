@@ -1,0 +1,21 @@
+{
+  "name": "@mily-labs/agent-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An open marketplace of skills & plugins for AI coding agents (Codex, Claude Code, and skills-compatible agents).",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/Mily-Labs/agent-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mily-Labs/agent-skills.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "sync": "node scripts/sync-skills.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run sync && npm run validate"
+  }
+}

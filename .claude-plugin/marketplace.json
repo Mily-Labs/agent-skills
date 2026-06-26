@@ -1,0 +1,16 @@
+{
+  "name": "mily-labs",
+  "owner": {
+    "name": "Mily Labs",
+    "url": "https://github.com/Mily-Labs"
+  },
+  "plugins": [
+    {
+      "name": "text-to-lottie-studio",
+      "source": "./plugins/text-to-lottie-studio",
+      "description": "Author virtuoso, art-directed Lottie animations from a prompt — logo reveals, kinetic type, liquid morphs, seamless loops — verified in a local Skottie player.",
+      "category": "Developer Tools",
+      "keywords": ["lottie", "animation", "motion-design", "skottie"]
+    }
+  ]
+}
