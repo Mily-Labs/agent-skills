@@ -6,6 +6,19 @@ All notable changes to this repository are documented here. The format is based 
 
 ## [Unreleased]
 
+### Added
+- Mily Labs brand icon for the `text-to-lottie-studio` plugin
+  (`interface.composerIcon` + `interface.logo`); `validate.mjs` now checks that
+  referenced icon/screenshot files exist.
+- `docs/INSTALL.md` — per-agent install guide and troubleshooting (Codex PATH,
+  marketplace refresh, etc.).
+
+### Changed
+- Codex install is now one command: the plugin is `INSTALLED_BY_DEFAULT`
+  (`authentication: ON_USE`), so `codex plugin marketplace add` enables it with no
+  manual config or GUI toggle.
+- Fixed install docs: removed the non-existent `codex plugin install` step.
+
 ## 0.1.0 — 2026-06-26
 
 Initial public release of the **Mily Labs agent-skills** marketplace.
