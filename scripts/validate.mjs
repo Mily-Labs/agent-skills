@@ -52,6 +52,15 @@ for (const f of files.filter((f) => ends(f, '.codex-plugin/plugin.json'))) {
     err(`${at}: interface.capabilities must be a non-empty array of strings`);
   }
   if (!('defaultPrompt' in i) && !('default_prompt' in i)) err(`${at}: interface.defaultPrompt required`);
+  const pluginRoot = dirname(dirname(f));
+  for (const key of ['composerIcon', 'logo']) {
+    if (key in i && !existsSync(resolve(pluginRoot, i[key]))) err(`${at}: interface.${key} file not found (${i[key]})`);
+  }
+  if (Array.isArray(i.screenshots)) {
+    for (const s of i.screenshots) {
+      if (!existsSync(resolve(pluginRoot, s))) err(`${at}: interface.screenshots entry not found (${s})`);
+    }
+  }
 }
 
 // 3) Claude plugin manifests

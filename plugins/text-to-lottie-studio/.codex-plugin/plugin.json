@@ -31,6 +31,8 @@
     ],
     "websiteURL": "https://github.com/Mily-Labs/agent-skills",
     "brandColor": "#5B8CFF",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
     "defaultPrompt": [
       "Animate my logo from logo.svg as a Lottie line-draw reveal.",
       "Create 3 Lottie animations to fill my landing page.",
