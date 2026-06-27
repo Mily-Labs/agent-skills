@@ -17,9 +17,11 @@ Perfect for **animating a logo** and **filling a website with motion**.
 
 | Agent | Commands |
 |---|---|
-| **Codex** | `codex plugin marketplace add https://github.com/Mily-Labs/agent-skills`<br>`codex plugin install text-to-lottie-studio@mily-labs` (then restart Codex) |
+| **Codex** | `codex plugin marketplace add Mily-Labs/agent-skills` (installs by default), then restart Codex |
 | **Claude Code** | `/plugin marketplace add Mily-Labs/agent-skills`<br>`/plugin install text-to-lottie-studio@mily-labs` |
 | **Any other agent** | `npx skills add Mily-Labs/agent-skills` |
+
+Full steps & troubleshooting: [docs/INSTALL.md](../../docs/INSTALL.md).
 
 ## Scaffold the player (one time)
 

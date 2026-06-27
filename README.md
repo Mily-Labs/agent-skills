@@ -26,11 +26,16 @@ Pick your agent — the same skills power all of them.
 
 ### Codex
 
+One command — the plugin is `INSTALLED_BY_DEFAULT`, so adding the marketplace
+enables it (Codex's CLI has no separate `install` step):
+
 ```bash
-codex plugin marketplace add https://github.com/Mily-Labs/agent-skills
-codex plugin install text-to-lottie-studio@mily-labs
-# then restart Codex
+codex plugin marketplace add Mily-Labs/agent-skills
 ```
+
+Then restart Codex. If `codex` isn't on your PATH (e.g. you only have the desktop
+app), see [docs/INSTALL.md](docs/INSTALL.md) for the full-path command and the
+in-app refresh flow.
 
 ### Claude Code
 
